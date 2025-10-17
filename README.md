@@ -3,9 +3,9 @@
 这是我完成的第二个完整 MLOps 实践项目，涵盖了从 模型训练、权重导出、API 构建、镜像制作到容器部署与测试 的完整流程。进一步深化了对 CNN 架构与模型推理部署流程 的理解。
 
 ## 项目文件和依赖
-Python
-Flask
-PyTorch
+Python  
+Flask  
+PyTorch  
 Docker
 
 ## 安装与构建
@@ -23,11 +23,14 @@ API 使用
 curl.exe -X POST -F "file=@test_image.png" http://localhost:8000/predict
 ```
 你将收到一个 JSON 响应，包含预测结果：
-
-json<br>{"prediction": "bird"}<br>
+```bash
+{"prediction": "bird"}
+```
 ## 测试截图
 <img width="865" height="391" alt="image" src="https://github.com/user-attachments/assets/885b6eeb-6fbb-4ce8-8ed1-5f8ac917ba4d" />
 <img width="865" height="129" alt="image" src="https://github.com/user-attachments/assets/51c61058-63e9-4b79-9ef7-a86ac7865575" />
+<img width="865" height="66" alt="image" src="https://github.com/user-attachments/assets/ac0e35f6-2586-4119-9b5b-d526097e2102" />
+
 
 ## 遇到的问题与解决
 问题 1：DataLoader 报错 - RuntimeError: An attempt has been made to start a new process...
